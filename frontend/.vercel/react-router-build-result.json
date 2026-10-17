@@ -1,0 +1,459 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/dashboard": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/profile": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/leaves": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/announcements": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/feedback": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/attendance": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/performance-reviews": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/tasks": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/ai-insights": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/users": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/departments": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/reports": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/leaves": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/feedback": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/activity-log": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/performance-reviews": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/tasks": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/ai-insights": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "app/root.tsx",
+        "path": "",
+        "config": {}
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "app/routes/home.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/protected": {
+        "id": "routes/protected",
+        "parentId": "root",
+        "file": "app/routes/protected.tsx",
+        "config": {}
+      },
+      "routes/dashboard": {
+        "id": "routes/dashboard",
+        "parentId": "routes/protected",
+        "file": "app/routes/dashboard.tsx",
+        "path": "dashboard",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/profile": {
+        "id": "routes/profile",
+        "parentId": "routes/protected",
+        "file": "app/routes/profile.tsx",
+        "path": "profile",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/leaves": {
+        "id": "routes/leaves",
+        "parentId": "routes/protected",
+        "file": "app/routes/leaves.tsx",
+        "path": "leaves",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/announcements": {
+        "id": "routes/announcements",
+        "parentId": "routes/protected",
+        "file": "app/routes/announcements.tsx",
+        "path": "announcements",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/feedback": {
+        "id": "routes/feedback",
+        "parentId": "routes/protected",
+        "file": "app/routes/feedback.tsx",
+        "path": "feedback",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/attendance": {
+        "id": "routes/attendance",
+        "parentId": "routes/protected",
+        "file": "app/routes/attendance.tsx",
+        "path": "attendance",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/performance-reviews": {
+        "id": "routes/performance-reviews",
+        "parentId": "routes/protected",
+        "file": "app/routes/performance-reviews.tsx",
+        "path": "performance-reviews",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/tasks": {
+        "id": "routes/tasks",
+        "parentId": "routes/protected",
+        "file": "app/routes/tasks.tsx",
+        "path": "tasks",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/ai-insights": {
+        "id": "routes/ai-insights",
+        "parentId": "routes/protected",
+        "file": "app/routes/ai-insights.tsx",
+        "path": "ai-insights",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/users": {
+        "id": "routes/admin/users",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/users.tsx",
+        "path": "admin/users",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/departments": {
+        "id": "routes/admin/departments",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/departments.tsx",
+        "path": "admin/departments",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/reports": {
+        "id": "routes/admin/reports",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/reports.tsx",
+        "path": "admin/reports",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/leaves": {
+        "id": "routes/admin/leaves",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/leaves.tsx",
+        "path": "admin/leaves",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/feedback": {
+        "id": "routes/admin/feedback",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/feedback.tsx",
+        "path": "admin/feedback",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/activity-log": {
+        "id": "routes/admin/activity-log",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/activity-log.tsx",
+        "path": "admin/activity-log",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/performance-reviews": {
+        "id": "routes/admin/performance-reviews",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/performance-reviews.tsx",
+        "path": "admin/performance-reviews",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/tasks": {
+        "id": "routes/admin/tasks",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/tasks.tsx",
+        "path": "admin/tasks",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/admin/ai-insights": {
+        "id": "routes/admin/ai-insights",
+        "parentId": "routes/protected",
+        "file": "app/routes/admin/ai-insights.tsx",
+        "path": "admin/ai-insights",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "C:/Users/pushk/Downloads/AI-Powered-Real-time-Employee-Management-System-main/AI-Powered-Real-time-Employee-Management-System-main/frontend/app",
+    "basename": "/",
+    "buildDirectory": "C:/Users/pushk/Downloads/AI-Powered-Real-time-Employee-Management-System-main/AI-Powered-Real-time-Employee-Management-System-main/frontend/build",
+    "future": {
+      "unstable_enableNodeReadableStream": false,
+      "unstable_optimizeDeps": false
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "root.tsx",
+        "path": ""
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/protected": {
+        "id": "routes/protected",
+        "parentId": "root",
+        "file": "routes/protected.tsx"
+      },
+      "routes/dashboard": {
+        "id": "routes/dashboard",
+        "parentId": "routes/protected",
+        "file": "routes/dashboard.tsx",
+        "path": "dashboard"
+      },
+      "routes/profile": {
+        "id": "routes/profile",
+        "parentId": "routes/protected",
+        "file": "routes/profile.tsx",
+        "path": "profile"
+      },
+      "routes/leaves": {
+        "id": "routes/leaves",
+        "parentId": "routes/protected",
+        "file": "routes/leaves.tsx",
+        "path": "leaves"
+      },
+      "routes/announcements": {
+        "id": "routes/announcements",
+        "parentId": "routes/protected",
+        "file": "routes/announcements.tsx",
+        "path": "announcements"
+      },
+      "routes/feedback": {
+        "id": "routes/feedback",
+        "parentId": "routes/protected",
+        "file": "routes/feedback.tsx",
+        "path": "feedback"
+      },
+      "routes/attendance": {
+        "id": "routes/attendance",
+        "parentId": "routes/protected",
+        "file": "routes/attendance.tsx",
+        "path": "attendance"
+      },
+      "routes/performance-reviews": {
+        "id": "routes/performance-reviews",
+        "parentId": "routes/protected",
+        "file": "routes/performance-reviews.tsx",
+        "path": "performance-reviews"
+      },
+      "routes/tasks": {
+        "id": "routes/tasks",
+        "parentId": "routes/protected",
+        "file": "routes/tasks.tsx",
+        "path": "tasks"
+      },
+      "routes/ai-insights": {
+        "id": "routes/ai-insights",
+        "parentId": "routes/protected",
+        "file": "routes/ai-insights.tsx",
+        "path": "ai-insights"
+      },
+      "routes/admin/users": {
+        "id": "routes/admin/users",
+        "parentId": "routes/protected",
+        "file": "routes/admin/users.tsx",
+        "path": "admin/users"
+      },
+      "routes/admin/departments": {
+        "id": "routes/admin/departments",
+        "parentId": "routes/protected",
+        "file": "routes/admin/departments.tsx",
+        "path": "admin/departments"
+      },
+      "routes/admin/reports": {
+        "id": "routes/admin/reports",
+        "parentId": "routes/protected",
+        "file": "routes/admin/reports.tsx",
+        "path": "admin/reports"
+      },
+      "routes/admin/leaves": {
+        "id": "routes/admin/leaves",
+        "parentId": "routes/protected",
+        "file": "routes/admin/leaves.tsx",
+        "path": "admin/leaves"
+      },
+      "routes/admin/feedback": {
+        "id": "routes/admin/feedback",
+        "parentId": "routes/protected",
+        "file": "routes/admin/feedback.tsx",
+        "path": "admin/feedback"
+      },
+      "routes/admin/activity-log": {
+        "id": "routes/admin/activity-log",
+        "parentId": "routes/protected",
+        "file": "routes/admin/activity-log.tsx",
+        "path": "admin/activity-log"
+      },
+      "routes/admin/performance-reviews": {
+        "id": "routes/admin/performance-reviews",
+        "parentId": "routes/protected",
+        "file": "routes/admin/performance-reviews.tsx",
+        "path": "admin/performance-reviews"
+      },
+      "routes/admin/tasks": {
+        "id": "routes/admin/tasks",
+        "parentId": "routes/protected",
+        "file": "routes/admin/tasks.tsx",
+        "path": "admin/tasks"
+      },
+      "routes/admin/ai-insights": {
+        "id": "routes/admin/ai-insights",
+        "parentId": "routes/protected",
+        "file": "routes/admin/ai-insights.tsx",
+        "path": "admin/ai-insights"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true,
+    "splitRouteModules": true,
+    "subResourceIntegrity": false,
+    "allowedActionOrigins": false,
+    "unstable_routeConfig": [
+      {
+        "id": "root",
+        "path": "",
+        "file": "root.tsx",
+        "children": [
+          {
+            "file": "routes/home.tsx",
+            "index": true
+          },
+          {
+            "file": "routes/protected.tsx",
+            "children": [
+              {
+                "file": "routes/dashboard.tsx",
+                "path": "dashboard"
+              },
+              {
+                "file": "routes/profile.tsx",
+                "path": "profile"
+              },
+              {
+                "file": "routes/leaves.tsx",
+                "path": "leaves"
+              },
+              {
+                "file": "routes/announcements.tsx",
+                "path": "announcements"
+              },
+              {
+                "file": "routes/feedback.tsx",
+                "path": "feedback"
+              },
+              {
+                "file": "routes/attendance.tsx",
+                "path": "attendance"
+              },
+              {
+                "file": "routes/performance-reviews.tsx",
+                "path": "performance-reviews"
+              },
+              {
+                "file": "routes/tasks.tsx",
+                "path": "tasks"
+              },
+              {
+                "file": "routes/ai-insights.tsx",
+                "path": "ai-insights"
+              },
+              {
+                "file": "routes/admin/users.tsx",
+                "path": "admin/users"
+              },
+              {
+                "file": "routes/admin/departments.tsx",
+                "path": "admin/departments"
+              },
+              {
+                "file": "routes/admin/reports.tsx",
+                "path": "admin/reports"
+              },
+              {
+                "file": "routes/admin/leaves.tsx",
+                "path": "admin/leaves"
+              },
+              {
+                "file": "routes/admin/feedback.tsx",
+                "path": "admin/feedback"
+              },
+              {
+                "file": "routes/admin/activity-log.tsx",
+                "path": "admin/activity-log"
+              },
+              {
+                "file": "routes/admin/performance-reviews.tsx",
+                "path": "admin/performance-reviews"
+              },
+              {
+                "file": "routes/admin/tasks.tsx",
+                "path": "admin/tasks"
+              },
+              {
+                "file": "routes/admin/ai-insights.tsx",
+                "path": "admin/ai-insights"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
